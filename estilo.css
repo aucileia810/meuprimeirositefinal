@@ -1,0 +1,114 @@
+html,body{
+    margin: 0;
+}
+header{
+    background-color:black;
+    color:white;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}   
+#logo{
+    width: 99px;
+    border: 1px solid red;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu{ 
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+   margin-top: 0px;
+}
+li{
+    float: left;
+    padding: 20px 10px 20px 10px;
+    border: 1px;
+}   
+li:hover{
+    background-color:cornflowerblue;
+}
+
+#imagem_fundo{
+     background: url(img/nuvem.jpg);
+     height: 100%; 
+     text-align-last: center;
+     background-size: cover;
+}
+#titulo{
+    color:rgb(241, 87, 16);
+    padding-top: 20%;
+    font-size: 50px;
+}
+#subtitulo{
+    color:rgb(241, 87, 16);
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 30px;
+}
+#texto{
+    font-size: 20px;
+}   
+#acao{
+    color: rgb(241, 87, 16);
+    border: 1px;
+    padding: 20px 20px 20px 20px ;
+    font-size: 20px;
+}
+.icone{
+    width: 150px;
+}
+.section{
+    padding: 20px;
+    float: left;
+}
+#exerciciopilates{
+    background-color: aquamarine;
+    padding: 20px;
+}
+.selecao{
+    padding: 20px;
+}
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 80%;
+}
+.justificado{
+    text-align: justify;
+}
+.colunatres{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 20%;
+}
+footer{
+    float: left;
+}
+@media all and (max-width: 768px){
+    #menu{
+        visibility: hidden;
+}
+.coluna,.colunatres{
+    display:block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+}
+#logodiv{
+    width: 100%; 
+    position: relative;   
+    text-align: center;
+    padding: 0px;
+}
+#logo{
+    margin-left: 0px;
+    transform: translateX();
+}
+
+}
